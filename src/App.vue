@@ -1,7 +1,7 @@
 <template lang="pug">
     #app
       img(src='dist/logo2.png')
-      h1 What's world is listening on lastfm?
+      h1 What's the world melomaniacs listening on lastfm?
       select(v-model="selectedCountry")  
         option(v-for="country in countries" v-bind:value="country.value") {{ country.name }}
       spinner(v-show="loading") 
